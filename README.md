@@ -38,6 +38,16 @@ MAGICALKEY=your_jwt_secret_key
 npm run dev
 ```
 
+## 🧪 API Endpoints
+
+##  🔐 Vendor
+| Endpoint                    | Method | Description             |
+| --------------------------- | ------ | ----------------------- |
+| `/vendor/register`          | POST   | Register new vendor     |
+| `/vendor/login`             | POST   | Login and get JWT token |
+| `/vendor/all-vendors`       | GET    | Get all vendors         |
+| `/vendor/single-vendor/:id` | GET    | Get vendor by ID        |
+
 
 
 
