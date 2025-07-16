@@ -24,6 +24,20 @@
 git clone https://github.com/yourusername/VendorXpress.git
 cd VendorXpress
 ```
-2.jhuh
+2. Install backend dependencies:
+```bash
+npm install
+```
+3. Create a .env file in the root directory and add your environment variables:
+```bash
+MONGO_URI=your_mongodb_connection_string
+MAGICALKEY=your_jwt_secret_key
+```
+4. Start the backend server:
+```bash
+npm run dev
+```
+
+
 
 
