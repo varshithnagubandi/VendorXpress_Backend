@@ -48,6 +48,25 @@ npm run dev
 | `/vendor/all-vendors`       | GET    | Get all vendors         |
 | `/vendor/single-vendor/:id` | GET    | Get vendor by ID        |
 
+## 🏢 Firm
+| Endpoint                   | Method | Description                           |
+| -------------------------- | ------ | ------------------------------------- |
+| `/firm/add-firm`           | POST   | Add a new firm *(JWT Token required)* |
+| `/firm/:firmId`            | DELETE | Delete a firm by ID                   |
+| `/firm/uploads/:imageName` | GET    | View firm image                       |
+
+## 🍕 Product
+| Endpoint                       | Method | Description                |
+| ------------------------------ | ------ | -------------------------- |
+| `/product/add-product/:firmId` | POST   | Add a product under a firm |
+| `/product/:firmId/products`    | GET    | Get products by firm ID    |
+| `/product/:productId`          | DELETE | Delete product by ID       |
+| `/product/uploads/:imageName`  | GET    | View product image         |
+
+## 👨‍💻 Author
+# Nagubandi Veera Venkata Varshith
+  Built with passion and precision using MERN stack 🚀
+
 
 
 
