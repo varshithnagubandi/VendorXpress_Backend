@@ -10,7 +10,7 @@ const path = require("path");
 
 const app = express();
 
-const port = 4000;
+const port = process.env.port || 4000;
 //to access data in .env file
 dotEnv.config();
 app.use(cors());
@@ -34,4 +34,8 @@ app.use("/uploads", express.static("uploads"));
 // To start --> npm run dev
 app.listen(port, () => {
   console.log(`SERVER STARTED RUNNING ON SERVER ${port}`);
+});
+
+app.use("/", (req, res) => {
+  res.send("<h1>Welcome to VendorXpress");
 });
